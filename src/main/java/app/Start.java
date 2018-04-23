@@ -12,7 +12,8 @@ public class Start extends AbstractVerticle {
     public void start() {
         //load config
         Vertx vertx = Vertx.vertx(new VertxOptions()
-                .setWorkerPoolSize(40)
+                .setInternalBlockingPoolSize(4)
+                .setWorkerPoolSize(4)
                 .setMaxWorkerExecuteTime(100)
                 .setBlockedThreadCheckInterval(200000000));
         Injector injector = Guice.createInjector(new ModuleService(vertx, context));

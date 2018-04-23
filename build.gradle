@@ -31,8 +31,8 @@ repositories {
 }
 
 dependencies {
-    compile 'io.vertx:vertx-core:3.4.2'
-    compile 'io.vertx:vertx-web:3.4.2'
+    compile 'io.vertx:vertx-core:3.5.0'
+    compile 'io.vertx:vertx-web:3.5.0'
     compile 'io.vertx:vertx-rabbitmq-client:3.4.2'
     compile 'io.vertx:vertx-health-check:3.4.2'
 
